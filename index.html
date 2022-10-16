@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <title>NikitaPershin</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div class = "container-fluid">
+            <div class="d-flex flex-column">
+                <div class="col-sm-12 order-md-0 mx-auto">
+                    <header>
+                        <img class="float-left" src="imagine.png" alt="for search">
+                        <div class="text-center"> Save kid named Finger </div>
+                    </header>
+                </div>
+                <div class="col-sm-12 text-center order-md-1 order-sm-1 mx-auto">
+                    <nav>
+                        <h2 class="text-center"> Меню </h2>
+                        <h3 class="text-center">
+                            <a href="#links">Ссылки</a>
+                            <a href="#table">Таблица</a>
+                            <a href="#form">Форма</a>
+                        </h3>
+                    </nav>
+                </div>
+
+                <div id="links" class="col-sm-12 col-md-7 order-sm-2 order-md-2 mx-auto">
+                    <h2 class="text-center">Ссылки</h2>
+                    <ol>
+                        <li><a href="http://example.com">абсолютную гиперссылку на главную страницу сайта example.com</a></li>
+                        <li><a href="https://example.com/">https://example.com</a></li>
+                        <li><a href="ftp://example.com/Temp/file.txt">ссылка на файл на сервере FTP без авторизации</a></li>
+                        <li><a href="ftp://example.com/Temp/file.txt:p:123456q">ссылку на файл на сервере FTP с авторизацией</a></li>
+                        <li><a href="https://github.com/MrMacskey/NikitaPershin.github.io/edit/main/index.html">ссылку на фрагмент страницы некоторого сайта</a></li>
+                        <li><a href="index.html/void">ссылку на фрагмент текущей страницы</a></li>
+                        <li><a href="https://www.google.com/search?q=поиск+гугл&oq=поиск+гугл">ссылку с двумя параметрами в URL</a></li>
+                        <li>список ссылок основной навигации сайта с подписями title
+                            <ul>
+                                <li><a href="#one" title="Первая ссылка">Первая</a></li>
+                                <li><a href="#two" title="Вторая ссылка">Вторая</a></li>
+                                <li><a href="#tab/one" title="Третья ссылка">Третья</a></li>
+                            </ul>    
+                        </li>
+                        <li><a>без href http://example.com</a></li>
+                        <li><a href="">Пустой href</a></li>
+                        <li><a href="https://example.com" rel="nofollow">ссылка, по которой запрещен переход</a></li>
+                        <li><!--noindex-->запрещена индексация <!--noindex--></li>
+                        <li>Си́ла — физическая <a target="_blank" href="https://ru.wikipedia.org/wiki/Векторная_величина">векторная величина</a> , являющаяся мерой воздействия на данное тело</li>
+                        <li>IMG:
+                        <img src="https://resizer.mail.ru/p/49317597-5778-55f4-b0f6-96d03e1d6280/AQAXBO-LkDgwrMajY-YN0F5IPNcHfyNyv1J-0jqWCuzINKNg5aoLny7upWvSOJvmjZ9eTwYkFzHRHgL8iR09BZTGImg.jpg" width="320" height="210" title="example">
+                        </li>
+                        <li>
+                            <map name="name">
+                                <area shape="circle" coords="120,30,200" alt="1" href="https://example.ru">       
+                            </map>
+                        </li>
+                        <li><a href="https://index.html:1">относительную на страницу в текущем каталоге</a></li>
+                        <li><a href="https://index.html/about/2">относительную на страницу в каталоге about</a></li>
+                        <li><a href="https://index.html/first">относительную на страницу в каталоге уровнем выше текущего </a></li>
+                        <li><a href="https://index.html/first/second">относительную на страницу в каталоге двумя уровнями выше </a> </li>
+                        <li><a href="/">сокращенную на главную</a></li>
+                        <li> <a href="/asd">сокращенную ссылку на внутреннюю</a></li>
+                    </ol>
+                </div>
+
+                <div id="form" class="col-sm-12 col-md-7 text-center order-sm-3 order-md-3 mx-auto">
+                    <h2 >ФОРМА</h2>
+
+                    <form action="act" method="POST">
+                        <label>
+                        Имя:<br/>
+                        <input name="field-name-1" value="">
+                        </label><br/>
+
+                        <label>
+                        e-mail:<br/>
+                        <input name="field-email" type="email"  placeholder="Введите вашу почту" >
+                        </label><br/>
+
+                        <label>
+                        Дата рождения:<br/>
+                        <input name="field-date" value="2022-09-12" type="date" >
+                        </label><br/>
+
+                        <label>
+                        Пол:<br/>
+                        <select name="field-name-3">
+                        <option value="Значение1">Мужской</option>
+                        <option value="Значение2" selected="selected">Женский</option>
+                        </select><br/>
+                        </label>
+                        
+
+                        <label>
+                        Сверхспособности:<br/>
+                        <select name="field-name-4[]"
+                        multiple="multiple">
+                        <option value="Значение1">бессмертиe</option>
+                        <option value="Значение2" selected="selected"> прохождение сквозь стены</option>
+                        <option value="Значение3" selected="selected"> левитация</option>
+                        </select><br/>
+                        </label>
+
+                    Число конечносткй:<br/>
+                        <label><input type="radio" checked="checked"
+                        name="radio-group-1" value="Значение1" >
+                        1</label>
+                        <label><input type="radio"
+                        name="radio-group-1" value="Значение2" >
+                        2</label>
+                        <label><input type="radio"
+                        name="radio-group-1" value="Значение3" >
+                        3</label>
+                        <label><input type="radio"
+                        name="radio-group-1" value="Значение2" >
+                        4</label>
+                        <label><input type="radio"
+                        name="radio-group-1" value="Значение2" >
+                        5+</label><br/>
+
+                        Узнали? Согласны?:<br/>
+                        <label><input type="checkbox" checked="checked"
+                        name="check-1">
+                        Подпись</label><br/>
+
+                    
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+                <div id="table" class="col-md-7 col-sm-12 text-center order-md-2 order-sm-2 mx-auto">
+                    <h2>Таблица</h2>
+                    <table class="mx-auto">
+                        <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        </tr>
+                        <tr>
+                        <td colspan="2" >11 -12</td>
+                        <td> 13 </td>
+                        </tr>
+                        <tr>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" > 31-33</td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td colspan="2" > 42-43</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12 text-center p-1 order-md-5 mx-auto">
+                <footer>
+                    <h3> Pershin Nikita</h3>
+                    <h3> Save Finger </h3>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+</html>

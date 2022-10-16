@@ -1,0 +1,85 @@
+.container-fluid{
+    background-color:rgb(0, 0, 0);
+  }
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color:rgb(0, 0, 0);
+}
+
+header{
+    background-color:rgb(51, 47, 176);
+    font-size:80px;
+}
+#header{
+    background-color:rgb(51, 47, 176);
+    margin:auto;
+    order:0;
+}
+
+
+nav{
+    font-size:20px;
+    font-style:normal;
+    text-align: center;
+    background-color:rgb(97, 96, 134);
+}
+#nav{
+    background-color:rgb(97, 96, 134); 
+    margin:auto;
+    display:inline; 
+    order:0;
+}
+
+#links {
+    font-size:25px;
+    font-style:normal;
+    background-color:rgb(97, 96, 134);
+    margin:auto;
+    order:2;
+  }
+
+#form{
+    font-size:25px;
+    font-style:normal;
+    text-align: center;
+    background-color:rgb(97, 96, 134);
+    margin:auto;
+    order:4;
+}
+input, select, textarea{
+    font-size:15px;
+    font-style:normal;
+    background-color: rgb(97, 96, 134);
+}
+
+#table{
+    background-color:rgb(97, 96, 134); 
+    margin:auto;
+    order:5;
+}
+table{
+    font-size:25px;
+    font-style:normal;
+    text-align: center;
+    border-collapse: collapse;
+    margin:auto;
+    background-color: rgb(97, 96, 134);
+}
+tbody tr:nth-child(odd) {
+    background-color:rgb(214, 252, 1);
+  }
+tbody tr:nth-child(even) {
+    background-color:rgb(255, 255, 255);
+  }
+th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+
+footer{
+    text-align: center;
+    height: 80px;
+    background-color:rgb(51, 47, 176);
+}
